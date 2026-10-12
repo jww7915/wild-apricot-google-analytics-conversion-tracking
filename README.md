@@ -1,41 +1,26 @@
-# Tamed Apricot Insights
+# Wild Apricot/Google Analytics Conversion Tracking
 
-Connect your marketing activity to paid Wild Apricot outcomes.
+Understand which marketing activity leads to paid memberships, renewals, event registrations, donations and store purchases in Wild Apricot.
 
-Tamed Apricot Insights brings Google Analytics campaign information and Wild Apricot payment records into one reporting service for membership organizations. See which eligible paid records have captured marketing history, review records that remain unmatched, and understand what generated paid activity.
+Google Analytics shows how people reach your website and what they do there. Wild Apricot holds the records of what they purchased or contributed. This tracking connects captured campaign information with confirmed paid records, helping an organization see which payments have a marketing connection and which have no known source.
 
-**Pilot release — public paid signup is coming soon.** Client connections and native forms are checked before tracking and delivery are enabled.
+## What it provides
 
-[Visit the product website](https://insights.tamedapricot.com/) · [Privacy notice](https://insights.tamedapricot.com/privacy.html)
+- **A record of paid results.** Reports include new memberships, renewals, membership level changes, event registrations, donations and store purchases. They show amounts, dates and related Wild Apricot records, so authorized staff can review who paid and what they paid for.
+- **Tracking across payment methods.** Wild Apricot's confirmed paid status is the basis for the result. This includes online payments and mailed checks recorded as paid by staff, without depending on a particular payment processor or a visitor returning to a thank-you page. Partial payments are not reported as fully paid conversions.
+- **Campaign-to-payment matching.** When a tracked visit can be reliably connected to a paid record, the report shows its campaign, such as an email campaign, social post or referral. This can include an offline payment following an earlier tracked website visit.
+- **Paid events in Google Analytics.** Confirmed payments with the required tracking information can be reported to the organization's Google Analytics property. Sending an event and seeing it appear in Google's reports are checked separately.
+- **Graphical monthly reports.** Reports bring together website activity, paid results, campaign matches and records needing attention. Delivery can cover a selected previous period and go to one or more designated email recipients on the organization's preferred day of the month.
 
-## What it does
+## How sources are explained
 
-- **Reconciles paid activity.** Checks Wild Apricot records for membership applications, renewals, level changes, donations, event registrations and store purchases. Recorded checks and other offline payments can be included alongside online payments.
-- **Connects eligible outcomes to campaigns.** Uses permitted website tracking and paid-record checks to associate captured campaign information with an outcome. Records without a qualifying match remain clearly identified.
-- **Works with your Google Analytics.** Connects to your organization's existing GA4 property and website stream. Paid-event sending has separate activation and verification steps; a successful submission is distinguished from Google's processed reporting.
-- **Explains how people found you.** Connects your existing choice questions, regardless of their wording. Where captured campaign information is absent, answers from membership, donation or event forms can appear as a clearly labelled self-reported fallback. Automatic renewals keep their own label.
-- **Creates tagged campaign links.** Builds consistent links for email, social, referral and other marketing campaigns.
-- **Prepares graphical monthly reports.** Combines Google Analytics activity, retained paid outcomes, campaign associations, unmatched records and data-coverage notes. Configure one or more recipients, a delivery day and time, a time zone, and the previous reporting period you want covered.
-- **Keeps paid-record details accessible.** Review the private report and open the original Wild Apricot record using your organization's own access.
+Each result keeps the distinction between what was captured and what can be confirmed from other records:
 
-## Pricing
+- **Captured campaign:** website tracking connects a campaign with the payment.
+- **Self-reported source:** when no captured campaign is available, an answer to “How did you hear about us?” or “Where did you find us?” can add context to a new membership, donation or event registration. It is labelled as the person's answer, not a tracked campaign.
+- **Automatic renewal:** payment records confirm a recurring renewal. It always keeps the automatic-renewal label, even when a campaign or self-reported answer is also available. A new campaign is not assumed to have caused it.
+- **Unknown source:** no campaign can be matched and no usable answer is available. The payment remains visible without inventing a marketing source.
 
-| Option | Price |
-| --- | --- |
-| Subscription | **USD 29 per month** |
-| Self-service setup | **No setup fee** |
-| Optional assisted setup | **USD 200 once**, plus the subscription |
+Google Analytics traffic sources are shown separately from the payment campaign matches. A retained campaign match does not mean Google has assigned that payment to the same session or campaign.
 
-These are the planned launch prices. Public checkout is not open yet.
-
-## Setup and reporting scope
-
-Your organization connects Google Analytics and a read-only Wild Apricot API key, reviews its native forms and source questions, installs the website capture snippet, and completes the tracking checks. Hosting is managed by Tamed Apricot; clients do not need a separate hosting account. Report recipients and a test delivery are checked before the schedule is enabled.
-
-Tracking follows the website's effective analytics permissions. Campaign association depends on eligible captured evidence; historical payments without that evidence cannot receive reconstructed campaign credit. Self-reported answers, captured campaign associations and Google's attribution are identified separately. Reports show incomplete coverage and unresolved records rather than presenting them as a complete result.
-
-The service is being validated in a live pilot. Availability and verified coverage vary by native checkout and client configuration; this overview does not establish universal conversion coverage or completed production acceptance.
-
-## About this public overview
-
-This repository contains product information only. The application source code, deployment configuration and operational records are maintained in a separate private repository. No open-source software license is granted by publishing this overview.
+Tracking follows the website's analytics permissions. Reports identify incomplete coverage and unresolved records. Historical payments without captured evidence cannot be given reconstructed campaign credit, and coverage is still being validated across the different Wild Apricot payment journeys.
